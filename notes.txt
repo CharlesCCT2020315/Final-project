@@ -2,3 +2,24 @@ link to the python code source: https://www.youtube.com/watch?v=GFSiL6zEZF0
 
 link of github: https://github.com/CharlesCCT2020315/Final-project 
 link of Report: https://docs.google.com/document/d/1MK1fr9CMRC9epdVE2k5W7Afo2YGikuJnZIq1RUIoLbU/edit?usp=sharing
+
+
+As camadas LSTM recebem sequências normalizadas dos últimos 30 dias de preços,
+processam essas informações para capturar padrões e tendências, 
+e a camada densa final prevê o preço futuro com base nessas tendências."
+LSTM layers receive normalized sequences of the last 30 days of prices,
+process this information to capture patterns and trends,
+and the final dense layer predicts the future price based on these trends.”
+
+Compilação do Modelo:
+
+O Adam é um método de otimização popular para redes neurais, conhecido por sua eficácia e eficiência.
+loss='mean_squared_error': A função de perda (loss function) é definida como o erro quadrático médio (MSE), 
+que mede a diferença entre as previsões do modelo e os valores reais. O objetivo é minimizar essa diferença durante o treinamento.
+
+Treinamento do Modelo:
+epochs=20: Define o número de épocas de treinamento, ou seja, o número de vezes que o modelo irá passar por todo o conjunto de treinamento.
+batch_size=23: Especifica o tamanho do lote (batch size), ou seja, quantos exemplos de treinamento são usados em cada iteração do treinamento. 
+O uso de um tamanho de lote de 23 significa que o conjunto de treinamento será dividido em lotes de 23 exemplos e o modelo será atualizado após cada lote.
+Durante o treinamento, o modelo ajustará seus pesos iterativamente para minimizar a função de perda, melhorando assim suas previsões ao longo do tempo. 
+Após 20 épocas de treinamento, o modelo será treinado e pronto para fazer previsões.
